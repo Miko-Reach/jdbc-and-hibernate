@@ -1,6 +1,6 @@
 package pl.sda.orange2.lambda;
 
-public interface boysdontcry {
+public interface BoysDontCry {
 
     void silnoreki();
 }
