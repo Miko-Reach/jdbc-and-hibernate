@@ -37,13 +37,20 @@ public class LambdaExercises {
             System.out.println("second");
         };
 
-
-
+        System.out.println("---------------------------------");
+        System.out.println("Coffe time");
         //Nawiasy klamrowe to ciało metody
         //Nawiasy () to lista argumetnów
         //() parenthesis - arguments list
         // -> argument body separator
         //{} parenthesis - method body
+        CoffeMaker myCoffeMaker = (int water, String coffeType) -> "my coffe";
+        CoffeMaker myCoffeMaker2 =(int water, String coffeType) -> {
+
+            return "my coffe";
+        };
+
+        CoffeMaker shortVersion = (water, coffeType) -> "my coffe";
 
 
 
