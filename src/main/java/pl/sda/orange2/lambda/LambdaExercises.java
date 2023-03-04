@@ -26,6 +26,27 @@ public class LambdaExercises {
         anonymousClassReference.silnoreki();
 
       //  BoysDontCry stupid = new String("")
+
+        BoysDontCry firstLambda = () -> {};
+        BoysDontCry secondLambda = () -> System.out.println("Lambda");
+        //Powyżej definicja metody silnoręki ten interfejs
+        secondLambda.silnoreki();
+        BoysDontCry thirdLambda = ()-> {
+
+            System.out.println("one");
+            System.out.println("second");
+        };
+
+
+
+        //Nawiasy klamrowe to ciało metody
+        //Nawiasy () to lista argumetnów
+        //() parenthesis - arguments list
+        // -> argument body separator
+        //{} parenthesis - method body
+
+
+
     }
 }
 
