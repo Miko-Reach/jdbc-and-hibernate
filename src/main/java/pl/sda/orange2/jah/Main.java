@@ -6,5 +6,6 @@ public class Main {
 
 
         System.out.println("WORKS.........");
+        System.out.println("JDBC AND HIBRENATE ZRÓB SQL!!");
     }
 }
