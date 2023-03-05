@@ -16,6 +16,8 @@ public class TestConnection {
 
         try {
 
+            //WE need jdbc driver (h2 dependency at pom)
+            //Connection gave us acces to existing
             var H2Connection = DriverManager.getConnection(H2Config.DB_URL,
                     H2Config.USER,
                     H2Config.PASSWORD);
@@ -26,6 +28,7 @@ public class TestConnection {
             queryResult.next();
             System.out.println("id: " + queryResult.getInt(1));
             System.out.println("name: " + queryResult.getString(2));
+
         } catch (SQLException exc) {
             System.out.println("got exception: " + exc);
             exc.printStackTrace();
