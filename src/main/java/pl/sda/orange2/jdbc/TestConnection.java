@@ -16,7 +16,7 @@ public class TestConnection {
 
         try {
 
-           var H2Connection = DriverManager.getConnection(H2Config.DB_URL,
+            var H2Connection = DriverManager.getConnection(H2Config.DB_URL,
                     H2Config.USER,
                     H2Config.PASSWORD);
             System.out.println("got connection:" + (H2Connection != null));
@@ -28,6 +28,7 @@ public class TestConnection {
             System.out.println("name: " + queryResult.getString(2));
         } catch (SQLException exc) {
             System.out.println("got exception: " + exc);
+            exc.printStackTrace();
 
         }
     }
