@@ -22,8 +22,11 @@ public class TestConnection {
                     H2Config.USER,
                     H2Config.PASSWORD);
             System.out.println("got connection:" + (H2Connection != null));
-
+//Statement is used to send queriees to db with existing connection
             Statement queryStatement = H2Connection.createStatement();
+
+            //ResultSet conntains query result data as simple table
+            //we need to iterate over result to got data
             ResultSet queryResult = queryStatement.executeQuery(query);
             queryResult.next();
             System.out.println("id: " + queryResult.getInt(1));
