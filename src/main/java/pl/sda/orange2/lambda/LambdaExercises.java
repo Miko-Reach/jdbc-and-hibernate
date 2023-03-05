@@ -8,7 +8,7 @@ public class LambdaExercises {
 
         BoysDontCry boy = new ChłopakiNiePłaczą();
         boy.silnoreki();
-      //  boy.sing();
+        //  boy.sing();
 
         ChłopakiNiePłaczą boy2 = new ChłopakiNiePłaczą();
         boy2.sing();
@@ -25,13 +25,14 @@ public class LambdaExercises {
 
         anonymousClassReference.silnoreki();
 
-      //  BoysDontCry stupid = new String("")
+        //  BoysDontCry stupid = new String("")
 
-        BoysDontCry firstLambda = () -> {};
+        BoysDontCry firstLambda = () -> {
+        };
         BoysDontCry secondLambda = () -> System.out.println("Lambda");
         //Powyżej definicja metody silnoręki ten interfejs
         secondLambda.silnoreki();
-        BoysDontCry thirdLambda = ()-> {
+        BoysDontCry thirdLambda = () -> {
 
             System.out.println("one");
             System.out.println("second");
@@ -45,11 +46,10 @@ public class LambdaExercises {
         // -> argument body separator
         //{} parenthesis - method body
         CoffeMaker myCoffeMaker = (int water, String coffeType) -> "my coffe";
-        CoffeMaker myCoffeMaker2 =(int water, String coffeType) -> {
+        CoffeMaker myCoffeMaker2 = (int water, String coffeType) -> {
 
             return "my coffe";
         };
-
 
 
         CoffeMaker myCoffeeMaker3 = (int water, String coffeeType) -> {
@@ -61,9 +61,6 @@ public class LambdaExercises {
 
         CoffeMaker shortVersion = (water, coffeeType) -> "my coffee";
         shortVersion.prepare(5, "Large Java coffee");
-
-
-
 
 
     }

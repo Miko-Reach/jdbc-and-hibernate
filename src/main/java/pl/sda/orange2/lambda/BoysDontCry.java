@@ -8,7 +8,8 @@ public interface BoysDontCry {
 
     void silnoreki();
 
-   default void cry () {}
+    default void cry() {
+    }
 
     //Functional interface rozszerza interfejs i domyślnie'
     //nam implementuje

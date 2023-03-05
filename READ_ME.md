@@ -8,3 +8,6 @@
 ## Merge types 
 
 - fast-forward
+- git status - show what is going on in repository
+
+
