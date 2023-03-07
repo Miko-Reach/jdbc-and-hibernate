@@ -33,6 +33,10 @@ public class TestConnection {
             System.out.println("got exception: " + exc);
             exc.printStackTrace();
 
+        } finally {
+
+            //Finally wywala nam zawsze rezultat nawet gdy mamy błąd
+
         }
     }
 }
